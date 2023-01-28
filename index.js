@@ -26,10 +26,10 @@ function redHole(amount) {
 }
 function nextRound() {
     if (blueOnBoard + (blueInHole * 3) > redOnBoard + (redInHole * 3)) {
-        blueScore = blueScore + (blueOnBoard + (blueInHole * 3) - redOnBoard + (redInHole * 3));
+        blueScore = blueScore + ((blueOnBoard + (blueInHole * 3)) - (redOnBoard + (redInHole * 3)));
         reset();
     } else if (redOnBoard + (redInHole * 3) > blueOnBoard + (blueInHole * 3)) {
-        redScore = redScore + (redOnBoard + (redInHole * 3) - blueOnBoard + (blueInHole * 3));
+        redScore = redScore + ((redOnBoard + (redInHole * 3)) - (blueOnBoard + (blueInHole * 3)));
         reset();
     } else {
         reset();
