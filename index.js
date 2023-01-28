@@ -37,3 +37,8 @@ function nextRound() {
     document.getElementById("bluescore").innerHTML = blueScore;
     document.getElementById("redscore").innerHTML = redScore;
 }
+window.onload = function() {
+    if(/iP(hone|ad)/.test(window.navigator.userAgent)) {
+        document.body.addEventListener('touchstart', function() {}, false);
+    }
+}
