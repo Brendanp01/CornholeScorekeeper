@@ -5,6 +5,20 @@ var redInHole = 0;
 var blueScore = 0;
 var redScore = 0;
 
+
+var app = document.getElementById("app");
+function start() {
+    app.requestFullscreen()
+	.then(function() {
+		app.style.display = "block";
+        document.getElementById("start").style.display = "none";
+	})
+	.catch(function(error) {
+		alert("Fullscreen not supported");
+	});
+}
+
+
 function updateScore() {
     document.getElementById("bluescore").innerHTML = blueScore;
     document.getElementById("redscore").innerHTML = redScore;
@@ -78,3 +92,10 @@ function resetAll() {
     redScore = 0;
     updateScore();
 }
+function fullscreenchanged() {
+    if(!document.fullscreenElement) {
+        app.style.display = "none";
+        document.getElementById("start").style.display = "inline";
+    }
+}
+app.addEventListener("fullscreenchange", fullscreenchanged)
