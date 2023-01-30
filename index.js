@@ -56,15 +56,19 @@ window.onload = function() {
 
 function setBlueScore() {
     score = Number(prompt("Enter a score for blue team", blueScore));
-    if (blueScore != NaN) {
+    if (!Number.isNaN(score)) {
         blueScore = score;
         updateScore();
+    } else {
+        alert("You did not enter a number.")
     }
 }
 function setRedScore() {
     score = Number(prompt("Enter a score for red team", redScore));
-    if (redScore != NaN) {
+    if (!Number.isNaN(score)) {
         redScore = score;
         updateScore();
+    } else {
+        alert("You did not enter a number.")
     }
 }
