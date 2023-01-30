@@ -10,44 +10,44 @@
 <body>
     <h1>Cornhole Score Counter</h1>
     <div class="flex-container">
-        <div class="bluescore flex-child"><h3 id="bluescore">0</h3></div>
-        <div class="redscore flex-child"><h3 id="redscore">0</h3></div>
+        <button class="bluescore flex-child"><h3 id="bluescore" style="color: white;" onclick="setBlueScore()">0</h3></button>
+        <button class="redscore flex-child"><h3 id="redscore" style="color: white;" onclick="setRedScore()">0</h3></button>
     </div>
     <h3>How many bags went in the hole?</h3>
     
         <div class="flex-child flex-container selector-container" style="background-color: blue; padding: 1vh;">
-            <button class="flex-child" onclick="blueHole(0)">0</button>
-            <button class="flex-child" onclick="blueHole(1)">1</button>
-            <button class="flex-child" onclick="blueHole(2)">2</button>
-            <button class="flex-child" onclick="blueHole(3)">3</button>
-            <button class="flex-child" onclick="blueHole(4)">4</button>
+            <button class="htmlbutton flex-child" onclick="blueHole(0)">0</button>
+            <button class="htmlbutton flex-child" onclick="blueHole(1)">1</button>
+            <button class="htmlbutton flex-child" onclick="blueHole(2)">2</button>
+            <button class="htmlbutton flex-child" onclick="blueHole(3)">3</button>
+            <button class="htmlbutton flex-child" onclick="blueHole(4)">4</button>
         </div>
         <div class="flex-child flex-container selector-container" style="background-color: red; padding: 1vh;">
-            <button class="flex-child" onclick="redHole(0)">0</button>
-            <button class="flex-child" onclick="redHole(1)">1</button>
-            <button class="flex-child" onclick="redHole(2)">2</button>
-            <button class="flex-child" onclick="redHole(3)">3</button>
-            <button class="flex-child" onclick="redHole(4)">4</button>
+            <button class="htmlbutton flex-child" onclick="redHole(0)">0</button>
+            <button class="htmlbutton flex-child" onclick="redHole(1)">1</button>
+            <button class="htmlbutton flex-child" onclick="redHole(2)">2</button>
+            <button class="htmlbutton flex-child" onclick="redHole(3)">3</button>
+            <button class="htmlbutton flex-child" onclick="redHole(4)">4</button>
         </div>
     
     <h3>How many bags are on the board?</h3>
     
         <div class="flex-child flex-container selector-container" style="background-color: blue; padding: 1vh;">
-            <button class="flex-child" onclick="blueBoard(0)">0</button>
-            <button class="flex-child" onclick="blueBoard(1)">1</button>
-            <button class="flex-child" onclick="blueBoard(2)">2</button>
-            <button class="flex-child" onclick="blueBoard(3)">3</button>
-            <button class="flex-child" onclick="blueBoard(4)">4</button>
+            <button class="htmlbutton flex-child" onclick="blueBoard(0)">0</button>
+            <button class="htmlbutton flex-child" onclick="blueBoard(1)">1</button>
+            <button class="htmlbutton flex-child" onclick="blueBoard(2)">2</button>
+            <button class="htmlbutton flex-child" onclick="blueBoard(3)">3</button>
+            <button class="htmlbutton flex-child" onclick="blueBoard(4)">4</button>
         </div>
         <div class="flex-child flex-container selector-container" style="background-color: red; padding: 1vh;">
-            <button class="flex-child" onclick="redBoard(0)">0</button>
-            <button class="flex-child" onclick="redBoard(1)">1</button>
-            <button class="flex-child" onclick="redBoard(2)">2</button>
-            <button class="flex-child" onclick="redBoard(3)">3</button>
-            <button class="flex-child" onclick="redBoard(4)">4</button>
+            <button class="htmlbutton flex-child" onclick="redBoard(0)">0</button>
+            <button class="htmlbutton flex-child" onclick="redBoard(1)">1</button>
+            <button class="htmlbutton flex-child" onclick="redBoard(2)">2</button>
+            <button class="htmlbutton flex-child" onclick="redBoard(3)">3</button>
+            <button class="htmlbutton flex-child" onclick="redBoard(4)">4</button>
         </div>
     
-    <button onclick="nextRound()">Next Round</button>
+    <button onclick="nextRound()" class="htmlbutton">Next Round</button>
 
 
     <script src="index.js"></script>

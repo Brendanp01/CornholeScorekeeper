@@ -12,6 +12,7 @@ body {
     border-radius: 20px;
     margin: 1vw;
     font-size: 30px;
+    border: none;
 }
 .redscore {
     background-color: red;
@@ -19,6 +20,7 @@ body {
     border-radius: 20px;
     margin: 1vw;
     font-size: 30px;
+    border: none;
 }
 .flex-container {
     display: flex;
@@ -36,13 +38,13 @@ body {
     border-radius: 20px;
     margin: 1vw;
 }
-button {
+.htmlbutton {
     margin: 1vw;
     padding: 15px;
     border-radius: 20px;
     border: none;
     font-weight: bold;
 }
-button:active {
+.htmlbutton:active {
     background-color: gray;
 }
