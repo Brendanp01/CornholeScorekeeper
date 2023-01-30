@@ -72,3 +72,9 @@ function setRedScore() {
         alert("You did not enter a number.")
     }
 }
+function resetAll() {
+    reset();
+    blueScore = 0;
+    redScore = 0;
+    updateScore();
+}
