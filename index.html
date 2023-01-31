@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button onclick="start()" class="htmlbutton" id="start">Start app</button>
-    <div style="display: none;" id="app">
-        <h1>Cornhole Score Counter</h1>
+    <div id="app">
         <div class="flex-container">
             <button class="bluescore flex-child"><h3 id="bluescore" style="color: white;" onclick="setBlueScore()">0</h3></button>
             <button class="redscore flex-child"><h3 id="redscore" style="color: white;" onclick="setRedScore()">0</h3></button>
@@ -50,9 +48,15 @@
             </div>
         
         <button onclick="nextRound()" class="htmlbutton">Next Round</button>
-        <div style="text-align: right;">
-            <button class="htmlbutton" onclick="resetAll()" style="font-size: 8px;">Reset</button>
+        <div class="flex-container">
+            <div class="flex-child" style="text-align: left;">
+                <button class="htmlbutton" onclick="coinFlip()" style="font-size: 8px;">Flip Coin</button>
+            </div>
+            <div class="flex-child" style="text-align: right;">
+                <button class="htmlbutton" onclick="resetAll()" style="font-size: 8px;">Reset</button>
+            </div>
         </div>
+        
     </div>
     
 

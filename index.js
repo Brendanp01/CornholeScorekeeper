@@ -7,16 +7,6 @@ var redScore = 0;
 
 
 var app = document.getElementById("app");
-function start() {
-    app.requestFullscreen()
-	.then(function() {
-		app.style.display = "block";
-        document.getElementById("start").style.display = "none";
-	})
-	.catch(function(error) {
-		alert("Fullscreen not supported");
-	});
-}
 
 
 function updateScore() {
@@ -92,10 +82,14 @@ function resetAll() {
     redScore = 0;
     updateScore();
 }
-function fullscreenchanged() {
-    if(!document.fullscreenElement) {
-        app.style.display = "none";
-        document.getElementById("start").style.display = "inline";
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
+function coinFlip() {
+    random = getRndInteger(0, 1)
+    if (random == 1) {
+        alert("Heads");
+    } else if (random == 0) {
+        alert("Tails");
     }
 }
-app.addEventListener("fullscreenchange", fullscreenchanged)
