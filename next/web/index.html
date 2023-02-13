@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.dart.js"></script>
+</head>
+<body>
+    <div id="app">
+        <div class="flex-container">
+            <button class="bluescore flex-child"><h3 id="bluescore" style="color: white;">0</h3></button>
+            <button class="redscore flex-child"><h3 id="redscore" style="color: white;">0</h3></button>
+        </div>
+        <h3>How many bags went in the hole?</h3>
+        
+            <div class="flex-child flex-container selector-container" style="background-color: blue; padding: 1vh;">
+                <button class="htmlbutton flex-child" id="blueHole0">0</button>
+                <button class="htmlbutton flex-child" id="blueHole1">1</button>
+                <button class="htmlbutton flex-child" id="blueHole2">2</button>
+                <button class="htmlbutton flex-child" id="blueHole3">3</button>
+                <button class="htmlbutton flex-child" id="blueHole4">4</button>
+            </div>
+            <div class="flex-child flex-container selector-container" style="background-color: red; padding: 1vh;">
+                <button class="htmlbutton flex-child" id="redHole0">0</button>
+                <button class="htmlbutton flex-child" id="redHole1">1</button>
+                <button class="htmlbutton flex-child" id="redHole2">2</button>
+                <button class="htmlbutton flex-child" id="redHole3">3</button>
+                <button class="htmlbutton flex-child" id="redHole4">4</button>
+            </div>
+        
+        <h3>How many bags are on the board?</h3>
+        
+            <div class="flex-child flex-container selector-container" style="background-color: blue; padding: 1vh;">
+                <button class="htmlbutton flex-child" id="blueBoard0">0</button>
+                <button class="htmlbutton flex-child" id="blueBoard1">1</button>
+                <button class="htmlbutton flex-child" id="blueBoard2">2</button>
+                <button class="htmlbutton flex-child" id="blueBoard3">3</button>
+                <button class="htmlbutton flex-child" id="blueBoard4">4</button>
+            </div>
+            <div class="flex-child flex-container selector-container" style="background-color: red; padding: 1vh;">
+                <button class="htmlbutton flex-child" id="redBoard0">0</button>
+                <button class="htmlbutton flex-child" id="redBoard1">1</button>
+                <button class="htmlbutton flex-child" id="redBoard2">2</button>
+                <button class="htmlbutton flex-child" id="redBoard3">3</button>
+                <button class="htmlbutton flex-child" id="redBoard4">4</button>
+            </div>
+        
+        <button id="nextRound" class="htmlbutton">Next Round</button>
+        <div class="flex-container">
+            <div class="flex-child" style="text-align: right;">
+                <button class="htmlbutton" id="reset" style="font-size: 8px;">Reset</button>
+            </div>
+        </div>
+        
+    </div>
+    
+
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
